@@ -5,11 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class findMaxConsecutiveOnes {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
-
-
     public int findMaxConsecutiveOnesExample(int[] nums) {
         int max = 0;
         int count = 0;
