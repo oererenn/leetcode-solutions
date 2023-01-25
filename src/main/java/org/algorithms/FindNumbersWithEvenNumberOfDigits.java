@@ -14,6 +14,7 @@ public class FindNumbersWithEvenNumberOfDigits {
         int count = 0;
         int digit = 0;
         for (int i = 0; i < nums.length; i++) {
+            // Divide to 10 to find digit number -> move the decimal point one place to the left
             while(nums[i] != 0){
                 nums[i] /= 10;
                 digit++;
