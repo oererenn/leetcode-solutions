@@ -14,14 +14,14 @@ import static org.junit.Assert.*;
 public class GroupAnagrams {
     public List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();
-        for (String str : strs) {
-            char[] chars = str.toCharArray();
+        for (int i = 0; i < strs.length; i++) {
+            char[] chars = strs[i].toCharArray();
             Arrays.sort(chars);
             String key = new String(chars);
             if (!map.containsKey(key)) {
                 map.put(key, new ArrayList<>());
             }
-            map.get(key).add(str);
+            map.get(key).add(strs[i]);
         }
         return new ArrayList<>(map.values());
     }
