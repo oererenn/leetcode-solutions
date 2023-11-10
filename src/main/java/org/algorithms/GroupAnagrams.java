@@ -25,8 +25,7 @@ public class GroupAnagrams {
         }
         return new ArrayList<>(map.values());
     }
-
-
+    
     @Test
     public void test(){
         String[] strs = {"eat","tea","tan","ate","nat","bat"};
